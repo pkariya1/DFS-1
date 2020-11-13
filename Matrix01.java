@@ -30,7 +30,7 @@ public class Matrix01 {
 					int r = curr[0] + dir[0];
 					int c = curr[1] + dir[1];
 
-					if (r > 0 && r < row && c > 0 && c < col && matrix[r][c] == -1) {
+					if (r >= 0 && r < row && c >= 0 && c < col && matrix[r][c] == -1) {
 						matrix[r][c] = dist;
 						q.add(new int[] { r, c });
 					}
